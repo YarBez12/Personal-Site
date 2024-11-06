@@ -77,7 +77,7 @@ nav#pages a:active {
 main {
     background-color: #CAC6E9;
 }
-main p {
+main p, main ul {
     padding: 10px;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -120,7 +120,7 @@ blockquote {
     line-height: 1.6;
 }
 
-.film {
+.item {
     display: flex;
     
 }
@@ -138,6 +138,13 @@ main h3 {
 
 aside#films {
     background-image: url(../images/filmbg.jpg);
+    background-repeat: no-repeat;
+}
+
+aside#pictures {
+    background-image: url(../images/gallerybg.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 aside nav {
     background-color: rgba(0, 0, 0, 0.5);
@@ -193,4 +200,31 @@ thead {
 }
 tr td:first-of-type {
     font-style: italic;
+}
+
+figcaption {
+    color: #009572;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+ol ul li:hover {
+    background-color: wheat;
+  }
+
+ul {
+    list-style-type: square; 
+}
+
+ol {
+    list-style-type: upper-roman; 
+}
+
+img {
+    transition: transform 0.3s ease; /* Анимация для плавного увеличения */
+}
+  
+img:hover {
+    transform: scale(1.1); /* Увеличение до 110% при наведении */
 }

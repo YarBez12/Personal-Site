@@ -9,80 +9,110 @@
 <body>
     <header>
         <h1>Yaroslav Bezvesilnyi</h1>
-        <h2>Favourite pictures</h2>
-        <h3>A collection of artworks that inspire me</h3>
+        <section id = "topic">
+            <h2>Favourite pictures</h2>
+            <h3>A collection of artworks that inspire me</h3>
+        </section>
     </header>
-    <nav>
+    <nav id = "pages">
         <a href = "index.html">Home</a>
         <a href = "films.html">Favourite films</a>
         <a href = "city.html">Native city</a>
         <a href = "pictures.html">Favourite pictures</a>
         <a href = "traditions.html">National traditions</a>
     </nav>
-    <nav>
-        <ul>
-            <li><a href = "#impression">Impression, Sunrise</a></li>
-            <li><a href = "#persistence">The Persistence of Memory</a></li>
-            <li><a href = "#mona_lisa">Mona Lisa</a></li>
-            <li><a href = "#no5">No. 5, 1948</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h3>Impression, Sunrise</h3>
-        <img src = "images/impression.jpg" alt = "Impression, Sunrise">
-        <ul>
-            <li><b>Artist</b>: Claude Monet</li>
-            <li><b>Year</b>: 1872</li>
-            <li><b>Style</b>: Impressionism</li>
-            <li>
-                <b>Description</b>: This work gave the Impressionist movement its name. 
-                It depicts the port of Le Havre in the early morning, 
-                with hazy outlines and soft colors. 
-                Monet's use of color and brushstrokes conveys fleeting impressions 
-                of light and atmosphere.
-            </li>
-        </ul>
-        <h3>The Persistence of Memory</h3>
-        <img src = "images/persistence.jpg" alt = "The Persistence of Memory">
-        <ul>
-            <li><b>Artist</b>: Salvador Dalí</li>
-            <li><b>Year</b>: 1931</li>
-            <li><b>Style</b>: Surrealism</li>
-            <li>
-                <b>Description</b>: One of Dalí's most famous works, 
-                featuring melting clocks against a surreal landscape. 
-                The painting embodies surrealism’s exploration of the 
-                fluidity of time and the relativity of memory.
-            </li>
-        </ul>
-        <h3>Mona Lisa</h3>
-        <img src = "images/monalisa.jpg" alt = "Mona Lisa">
-        <ul>
-            <li><b>Artist</b>: Salvador Dalí</li>
-            <li><b>Year</b>: Approximately 1503–1506</li>
-            <li><b>Style</b>: Renaissance</li>
-            <li>
-                <b>Description</b>: This legendary Renaissance portrait 
-                is famous for its enigmatic smile and realism. 
-                The "Mona Lisa" combines portraiture with a natural background, 
-                emphasizing the harmony between humanity and nature.
-            </li>
-        </ul>
-        <h3>No. 5, 1948</h3>
-        <img src = "images/no5.jpg" alt = "No. 5, 1948">
-        <ul>
-            <li><b>Artist</b>: Jackson Pollock</li>
-            <li><b>Year</b>: 1948</li>
-            <li><b>Style</b>: Abstract Expressionism</li>
-            <li>
-                <b>Description</b>: Created using the "drip" painting technique, 
-                with paint chaotically distributed across the canvas. 
-                Pollock’s work demonstrates emotion and energy, 
-                avoiding clear shapes and subjects. This painting became one of 
-                the most famous pieces in abstract expressionism, sparking much debate.
-            </li>
-        </ul>
-    </main>
+    <section id = "content">
+        <aside id = "pictures">
+            <nav>
+                <ul>
+                    <li><a href = "#impression">Impression, Sunrise</a></li>
+                    <li><a href = "#persistence">The Persistence of Memory</a></li>
+                    <li><a href = "#mona_lisa">Mona Lisa</a></li>
+                    <li><a href = "#no5">No. 5, 1948</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class = "item">
+                <figure id = "impression">
+                    <img src = "images/impression.jpg" alt = "Impression, Sunrise">
+                    <figcaption>Impression, Sunrise</figcaption>
+                </figure>
+                <div class = "description">
+                    <ul>
+                        <li><b>Artist</b>: Claude Monet</li>
+                        <li><b>Year</b>: 1872</li>
+                        <li><b>Style</b>: Impressionism</li>
+                        <li>
+                            <b>Description</b>: This work gave the Impressionist movement its name. 
+                            It depicts the port of Le Havre in the early morning, 
+                            with hazy outlines and soft colors. 
+                            Monet's use of color and brushstrokes conveys fleeting impressions 
+                            of light and atmosphere.
+                        </li>
+                    </ul>
+                </div>
+            </div> <hr>
+            <div class = "item">
+                <figure id = "persistence">
+                    <img src = "images/persistence.jpg" alt = "The Persistence of Memory">
+                    <figcaption>The Persistence of Memory</figcaption>
+                </figure>
+                <div class = "description">
+                    <ul>
+                        <li><b>Artist</b>: Salvador Dalí</li>
+                        <li><b>Year</b>: 1931</li>
+                        <li><b>Style</b>: Surrealism</li>
+                        <li>
+                            <b>Description</b>: One of Dalí's most famous works, 
+                            featuring melting clocks against a surreal landscape. 
+                            The painting embodies surrealism’s exploration of the 
+                            fluidity of time and the relativity of memory.
+                        </li>
+                    </ul>
+                </div>
+            </div> <hr>
+                <div class = "item">
+                <figure id = "mona_lisa">
+                    <img src = "images/monalisa.jpg" alt = "Mona Lisa">
+                    <figcaption>Mona Lisa</figcaption>
+                </figure>
+                <div class = "description">
+                    <ul>
+                        <li><b>Artist</b>: Salvador Dalí</li>
+                        <li><b>Year</b>: Approximately 1503–1506</li>
+                        <li><b>Style</b>: Renaissance</li>
+                        <li>
+                            <b>Description</b>: This legendary Renaissance portrait 
+                            is famous for its enigmatic smile and realism. 
+                            The "Mona Lisa" combines portraiture with a natural background, 
+                            emphasizing the harmony between humanity and nature.
+                        </li>
+                    </ul>
+                </div>
+            </div> <hr>
+            <div class = "item">
+                <figure id = "no5">
+                    <img src = "images/no5.jpg" alt = "No. 5, 1948">
+                    <figcaption>No. 5, 1948</figcaption>
+                </figure>
+                <div class = "description">
+                    <ul>
+                        <li><b>Artist</b>: Jackson Pollock</li>
+                        <li><b>Year</b>: 1948</li>
+                        <li><b>Style</b>: Abstract Expressionism</li>
+                        <li>
+                            <b>Description</b>: Created using the "drip" painting technique, 
+                            with paint chaotically distributed across the canvas. 
+                            Pollock’s work demonstrates emotion and energy, 
+                            avoiding clear shapes and subjects. This painting became one of 
+                            the most famous pieces in abstract expressionism, sparking much debate.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
     <footer>
         <p>&copy; Yaroslav Bezvesilnyi, 2024. All rights reserved.</p>
     </footer>    
