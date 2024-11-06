@@ -2,7 +2,6 @@ body {
     margin: 5%;
 }
 
-
 header h1 {
     background-color: #006400;
     padding: 10px 5px;
@@ -18,7 +17,7 @@ header h2 {
     flex: 1;
     margin: 0;
     color: #006400;
-
+    padding-left: 20px;
 }
 header h3 {
     background-color: #BFFDE9;
@@ -30,7 +29,7 @@ header h3 {
     color: #006400;
     text-align: right;
     font-style: italic;
-
+    padding-right: 20px;
 }
 
 #topic {
@@ -50,7 +49,7 @@ nav#pages {
 nav#pages a {
     background-color: #B6B000;
     padding: 15px;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     width: 15%;
     text-align: center;
@@ -78,3 +77,87 @@ nav#pages a:active {
 main {
     background-color: #CAC6E9;
 }
+main p {
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+hr {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+footer {
+    text-align: center;
+    background-color: gray;
+    color:white;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+
+aside {
+   flex: 1;
+}
+main {
+    flex: 3.5;
+    padding: 10px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+blockquote {
+    font-family: "Georgia", serif; 
+    font-style: italic;
+    color: #555; 
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.film {
+    display: flex;
+    
+}
+
+img {
+    flex: 1;
+}
+.film .description {
+    flex: 2;
+}
+main h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+aside {
+    background-image: url(../images/filmbg.jpg);
+}
+aside nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+aside nav ul {
+    list-style-type: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+li a:link, li a:visited {
+    color: #FAEF58;
+    text-decoration: none;
+}
+nav ul li {
+    padding: 20px 5px;
+    text-align: center;
+    border-bottom: 2px dashed black;
+    border-top: 2px dashed black;
+}
+
