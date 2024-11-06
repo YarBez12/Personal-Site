@@ -42,7 +42,7 @@ header h3 {
 
 nav#pages {
     display: flex;
-    margin-top: 10px;
+    margin: 10px 0;
     justify-content: space-around;
 }
 
@@ -136,7 +136,7 @@ main h3 {
     margin: 10px;
 }
 
-aside {
+aside#films {
     background-image: url(../images/filmbg.jpg);
 }
 aside nav {
@@ -161,3 +161,36 @@ nav ul li {
     border-top: 2px dashed black;
 }
 
+th, td {
+    border: solid black 2px;
+}
+table {
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+    border: dashed black 3px;
+}
+th {
+    font-style: italic;
+    font-weight: normal;
+    padding: 10px;
+    text-decoration: underline;
+}
+td {
+    padding: 5px;
+}
+tbody tr:nth-of-type(even) {
+    background-color: #39FFD8;
+}
+tbody tr:nth-of-type(odd) {
+    background-color: #4DE6C8;
+}
+tbody tr:hover {
+    background-color: wheat;
+    cursor: pointer;
+}
+thead {
+    background-color: #00B692;
+}
+tr td:first-of-type {
+    font-style: italic;
+}
