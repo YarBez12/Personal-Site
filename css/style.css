@@ -4,49 +4,42 @@ body {
 
 header h1 {
     background-color: #006400;
-    padding: 10px 5px;
     text-align: center;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    margin: 0;
     color: white;
 }
 header h2 {
     background-color: #D8F5EB;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    padding: 10px 5px;
     flex: 1;
-    margin: 0;
     color: #006400;
     padding-left: 20px;
 }
 header h3 {
     background-color: #BFFDE9;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    padding: 10px 5px;
     flex: 1.5;
     border-left: 1px solid #80FAD6;
-    margin: 0;
     color: #006400;
     text-align: right;
     font-style: italic;
     padding-right: 20px;
 }
-
+header h1, header h2, header h3 {
+    padding: 10px 5px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    margin: 0;
+}
 #topic {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    border-top: 3px solid #00FF09;
-    border-bottom: 3px solid #00FF09;
+    border-block: 3px solid #00FF09;
 }
 
-nav#pages {
+#pages {
     display: flex;
     margin: 10px 0;
     justify-content: space-around;
 }
 
-nav#pages a {
+#pages a {
     background-color: #B6B000;
     padding: 15px;
     font-size: 18px;
@@ -55,22 +48,21 @@ nav#pages a {
     text-align: center;
 }
 
-nav#pages a:link {
+#pages a:link {
     color: white;
     text-decoration: none;
 }
 
-nav#pages a:visited {
+#pages a:visited {
     color: #FFE2E7;
     text-decoration: none;
 }
-
-nav#pages a:hover {
+#pages a:hover {
     color: #e74c3c; 
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-nav#pages a:active {
+#pages a:active {
     color: #3824F0;
  }
 
@@ -84,6 +76,7 @@ main p, main ul {
 }
 hr {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
 }
 footer {
     text-align: center;
@@ -93,14 +86,12 @@ footer {
 
 #content {
     display: flex;
-    width: 100%;
-    margin: 10px;
 }
 
 aside {
    flex: 1;
 }
-main {
+#content main {
     flex: 3.5;
     padding: 10px;
 }
@@ -125,7 +116,7 @@ blockquote {
     
 }
 
-img {
+.item img {
     flex: 1;
 }
 .film .description {
@@ -136,12 +127,12 @@ main h3 {
     margin: 10px;
 }
 
-aside#films {
+#films {
     background-image: url(../images/filmbg.jpg);
     background-repeat: no-repeat;
 }
 
-aside#pictures {
+#pictures {
     background-image: url(../images/gallerybg.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -156,15 +147,14 @@ aside nav ul {
     font-size: 18px;
     padding: 0;
 }
-nav li a:link, li a:visited {
+aside nav li a:link, aside nav li a:visited {
     color: #FAEF58;
     text-decoration: none;
 }
-nav ul li {
+aside nav ul li {
     padding: 20px 5px;
     text-align: center;
-    border-bottom: 2px dashed black;
-    border-top: 2px dashed black;
+    border-block: 2px dashed black;
 }
 
 th, td {
@@ -174,7 +164,8 @@ table {
     border-collapse: collapse;
     font-family: 'Open Sans', sans-serif;
     border: dashed black 3px;
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
 }
 th {
     font-style: italic;
@@ -213,19 +204,32 @@ ol ul li:hover {
     background-color: wheat;
   }
 
-ul {
+.traditions ul {
     list-style-type: square; 
 }
 
-ol {
+.traditions {
     list-style-type: upper-roman; 
 }
 
-img {
-    transition: transform 0.3s ease; /* Анимация для плавного увеличения */
+#content img {
+    transition: transform 0.3s ease; 
 }
   
-img:hover {
-    transform: scale(1.1); /* Увеличение до 110% при наведении */
+#content img:hover {
+    transform: scale(1.1); 
+}
+
+main a:link {
+    color: #00059E;
+}
+main a:visited {
+    color: #35365C;
+}
+main a:hover {
+    color: red;
+}
+main a:active {
+    background-color: gray;
 }
 
