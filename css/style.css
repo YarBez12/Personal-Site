@@ -156,8 +156,7 @@ aside nav ul {
     font-size: 18px;
     padding: 0;
 }
-
-li a:link, li a:visited {
+nav li a:link, li a:visited {
     color: #FAEF58;
     text-decoration: none;
 }
@@ -175,6 +174,7 @@ table {
     border-collapse: collapse;
     font-family: 'Open Sans', sans-serif;
     border: dashed black 3px;
+    width: 100%;
 }
 th {
     font-style: italic;
@@ -228,3 +228,4 @@ img {
 img:hover {
     transform: scale(1.1); /* Увеличение до 110% при наведении */
 }
+
