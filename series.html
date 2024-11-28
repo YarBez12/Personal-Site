@@ -9,24 +9,30 @@
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
   </head>
   <body>
-    <header>
-      <h1>Yaroslav Bezvesilnyi</h1>
-      <section id="topic">
-        <h2>Favourite series</h2>
-        <h3>A story that redefines morality and personal transformation</h3>
-      </section>
+    <header class = "ui container">
+        <div class = "ui stackable grid">
+        <div class = "green sixteen wide center aligned column"><div class="ui massive header">Yaroslav Bezvesilnyi</div></div>
+        <div class = "ui row">
+        <div class = "blue seven wide left aligned column"><div class="ui huge header">Favourite series</div></div>
+        <div class = "teal nine wide right aligned column"><div class="ui large header">A story that redefines morality and personal transformation</div></div>
+        </div>
+        </div>
     </header>
-    <nav id="pages">
-      <a href="index.html">Home</a>
-      <a href="films.html">Favourite films</a>
-      <a href="city.html">Native city</a>
-      <a href="pictures.html">Favourite pictures</a>
-      <a href="traditions.html">National traditions</a>
-      <a href="artist.html">Favourite artist</a>
-      <a href="series.html">Favourite series</a>
+    <nav class = "ui container">
+        <div class = "ui seven item stackable top attached tabular menu">
+        <a class = "item" href = "index.html">Home</a>
+        <a class = "item" href = "films.html">Favourite films</a>
+        <a class = "item" href = "city.html">Native city</a>
+        <a class = "item" href = "pictures.html">Favourite pictures</a>
+        <a class = "item" href = "traditions.html">National traditions</a>
+        <a class = "item" href = "artist.html">Favourite artist</a>
+        <a class = "active item" href = "series.html">Favourite series</a>
+        </div>
     </nav>
     <main>
-      <h3>Breaking Bad</h3>
+        <div class="ui large center aligned header">Breaking Bad</div>
+        <div class = "ui container">
+        <div class="ui blue piled segment">
       <p>
         The series "Breaking Bad", created by Vince Gilligan, first aired on AMC
         in January 2008. The story of its creation is very interesting and is
@@ -43,61 +49,150 @@
         difficulties in finding a channel for its release. However, after
         showing a prototype of the episode at a script conference, AMC showed
         interest and the series was given the green light.
-      </p>
-      <div class="names">
-        <h2>Names</h2>
-        <div>Walter White</div>
-        <div>Jesse Pinkman</div>
-        <div>Skyler White</div>
-        <div>Hank Schrader</div>
-        <div>Saul Goodman</div>
-        <div>Mike Ehrmantraut</div>
-        <div>Gus Fring</div>
-        <div>Marie Schrader</div>
+      </p></div>
+      <div class="ui large center aligned header">Main characters</div>
+      <div class="ui equal width top attached stackable tabular menu">
+        <div class="active item link" data-tab="walter">Walter White</div>
+        <div class="item link" data-tab="jesse">Jesse Pinkman</div>
+        <div class="item link" data-tab="skyler">Skyler White</div>
+        <div class="item link" data-tab="hank">Hank Schrader</div>
+        <div class="item link" data-tab="saul">Saul Goodman</div>
+        <div class="item link" data-tab="mike">Mike Ehrmantraut</div>
+        <div class="item link" data-tab="gus">Gus Fring</div>
+        <div class="item link" data-tab="marie">Marie Schrader</div>
     </div>
 
-    <div class="details">
-        <h2>Details</h2>
-        <div>
-            <img src="images/walter.png" alt="Walter White">
-            <p>The main character, a chemistry teacher who starts manufacturing methamphetamine after being diagnosed with terminal cancer. 
-            He transforms from a humble man into a powerful drug lord under the alias "Heisenberg."</p>
-        </div>
-        <div>
-            <img src="images/jesse.png" alt="Jesse Pinkman">
-            <p>Former student of Walter White and his partner in the drug business. Starts as a street dealer and evolves into a more 
-            conscious and emotionally sensitive person.</p>
-        </div>
-        <div>
-            <img src="images/skyler.png" alt="Skyler White">
-            <p>Walter's wife, who transitions from a regular housewife to an active participant in Walter's criminal activities. 
-            Her inner conflict and eventual acceptance play a critical role in the story.</p>
-        </div>
-        <div>
-            <img src="images/hank.png" alt="Hank Schrader">
-            <p>Skyler's brother and a dedicated DEA agent. His relentless pursuit of "Heisenberg" leads to dramatic developments in the series.</p>
-        </div>
-        <div>
-            <img src="images/saul.png" alt="Saul Goodman">
-            <p>A lawyer specializing in assisting criminals. Becomes a key figure in the latter half of the series and plays a major role in 
-            the plot twists.</p>
-        </div>
-        <div>
-            <img src="images/mike.png" alt="Mike Ehrmantraut">
-            <p>A former police officer and hitman working for various drug lords. Becomes a crucial figure in Walter's drug enterprise.</p>
-        </div>
-        <div>
-            <img src="images/gus.png" alt="Gus Fring">
-            <p>A mysterious and cold-blooded drug lord, owner of the "Los Pollos Hermanos" restaurant chain, and one of Walter and Jesse's 
-            main antagonists. Known for his calm demeanor and meticulous control.</p>
-        </div>
-        <div>
-            <img src="images/marie.png" alt="Marie Schrader">
-            <p>Skyler's sister and Hank's wife, whose penchant for kleptomania and lying often puts her in awkward situations. 
-            Her character adds depth to the family dynamics.</p>
+    <div class="ui bottom attached tab segment" data-tab="walter">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/walter.png" class="ui fluid image" alt="Walter White">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Walter White, portrayed by Bryan Cranston, begins the series as a seemingly ordinary high school chemistry teacher living a quiet suburban life in Albuquerque. 
+                Struggling to make ends meet for his family, Walter’s world is turned upside down when he is diagnosed with terminal lung cancer. 
+                Desperate to leave a financial legacy for his pregnant wife, Skyler, and his disabled son, Walter Jr., he takes an unthinkable step: entering the dangerous world of 
+                methamphetamine production. Partnering with his former student, Jesse Pinkman, Walter uses his unparalleled chemistry skills to create a product of unprecedented purity. 
+                Under the alias "Heisenberg," Walter transforms from a humble, mild-mannered teacher into a cunning, ruthless, and calculating drug kingpin. 
+                Throughout the series, he grapples with his moral decline, justifying his actions as being for his family’s benefit while becoming consumed by pride, power, and greed. 
+                Walter’s story is a study in human ambition, the corrupting influence of power, and the devastating consequences of unchecked ego.</p>
+            </div>
         </div>
     </div>
-    <table>
+    
+    <div class="ui bottom attached tab segment" data-tab="jesse">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/jesse.png" class="ui fluid image" alt="Jesse Pinkman">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Jesse Pinkman, played by Aaron Paul, starts the series as a small-time methamphetamine producer and street dealer, living a reckless, hedonistic lifestyle. 
+                Partnering with Walter White begins as a business arrangement but soon evolves into a complex and turbulent relationship. Jesse’s arc is one of the most 
+                emotionally compelling in the series. Initially portrayed as immature and impulsive, he matures over time, becoming a deeply introspective and empathetic individual. 
+                Jesse’s struggles with addiction, guilt over his role in the drug trade, and the deaths of those he cares about highlight his humanity amidst the chaos. 
+                Despite the abuse and manipulation he faces from Walter, Jesse constantly seeks redemption, even at great personal cost. His journey is marked by profound 
+                tragedy, but it also showcases resilience and the enduring fight for a second chance in life.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui bottom attached tab segment" data-tab="skyler">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/skyler.png" class="ui fluid image" alt="Skyler White">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Skyler White, portrayed by Anna Gunn, is a central figure in Walter's transformation and a deeply layered character in her own right. 
+                Starting as a supportive and loving wife, she is initially unaware of Walter’s criminal activities. As she begins to uncover the truth, 
+                Skyler is forced to navigate her moral boundaries, eventually becoming a reluctant accomplice in laundering Walter’s illicit earnings. 
+                Her internal conflict between protecting her family and grappling with the moral implications of Walter’s actions forms a core part of her arc. 
+                Skyler’s strength and intelligence shine as she devises ways to manage their growing wealth while shielding her children from the dark reality of their father’s life. 
+                Her story is one of resilience, personal sacrifice, and the emotional toll of being tethered to a man consumed by his ambition and deceit.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui bottom attached tab segment" data-tab="hank">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/hank.png" class="ui fluid image" alt="Hank Schrader">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Hank Schrader, played by Dean Norris, is Skyler’s brother and Walter’s brother-in-law. A senior DEA agent with a larger-than-life personality, 
+                Hank is known for his boisterous sense of humor and relentless pursuit of justice. His investigation into the mysterious drug lord known as "Heisenberg" 
+                unknowingly brings him closer to uncovering Walter’s secret. Hank’s journey is filled with challenges, including a traumatic near-death experience 
+                and the resulting PTSD, which temporarily sidelines his career. However, his determination to bring "Heisenberg" to justice is unwavering. 
+                Hank’s relationship with Walter becomes one of the show’s most intense dynamics as he slowly pieces together the truth, culminating in a dramatic 
+                and emotional confrontation. His bravery, loyalty, and commitment to doing what is right make him one of the show’s moral anchors.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui bottom attached tab segment" data-tab="saul">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/saul.png" class="ui fluid image" alt="Saul Goodman">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Saul Goodman, portrayed by Bob Odenkirk, is the flashy and morally dubious lawyer who becomes a vital ally to Walter and Jesse. 
+                Known for his colorful suits, catchy advertisements, and street-smart tactics, Saul provides legal cover and creative solutions 
+                to the duo’s increasingly complex problems. While often serving as comic relief, Saul’s character also explores the moral compromises 
+                made in the pursuit of survival and success. His backstory, as explored in the prequel series "Better Call Saul," reveals a deeply 
+                ambitious and resourceful man navigating the gray areas of the legal system. Saul’s quick wit, charm, and resilience make him an 
+                unforgettable part of the Breaking Bad universe.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui bottom attached tab segment" data-tab="mike">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/mike.png" class="ui fluid image" alt="Mike Ehrmantraut">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Mike Ehrmantraut, played by Jonathan Banks, is the calm, methodical, and highly skilled fixer working for Gus Fring. 
+                A former Philadelphia police officer, Mike embodies a no-nonsense professionalism that contrasts sharply with Walter’s growing recklessness. 
+                He is fiercely loyal to Gus and adheres to a strict moral code, prioritizing family and honor over greed. 
+                His relationship with his granddaughter, Kaylee, provides a tender and humanizing glimpse into his otherwise stoic demeanor. 
+                Mike’s expertise in logistics, security, and conflict resolution makes him an indispensable part of Gus’s operation and a critical figure in Walter’s rise. 
+                However, his growing mistrust of Walter ultimately leads to one of the most tragic and pivotal moments in the series.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui bottom attached tab segment" data-tab="gus">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/gus.png" class="ui fluid image" alt="Gus Fring">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Gus Fring, portrayed by Giancarlo Esposito, is the enigmatic and calculating drug kingpin who operates under the guise of the charming 
+                owner of the fast-food chain "Los Pollos Hermanos." Gus’s calm demeanor, strategic brilliance, and meticulous attention to detail make him 
+                one of the most formidable adversaries Walter and Jesse encounter. His ability to compartmentalize his criminal empire from his public persona 
+                demonstrates his unparalleled discipline and cunning. Gus’s backstory reveals a deeply personal vendetta against the Mexican cartel, which drives 
+                his ambitions and ruthless pursuit of power. His eventual clash with Walter showcases the deadly consequences of betrayal and the intricate chess 
+                game of the drug trade.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui bottom attached tab segment" data-tab="marie">
+        <div class="ui grid">
+            <div class="five wide column">
+                <img src="images/marie.png" class="ui fluid image" alt="Marie Schrader">
+            </div>
+            <div class="eleven wide left aligned column">
+                <p>Marie Schrader, played by Betsy Brandt, is Skyler’s sister and Hank’s wife. Quirky, opinionated, and often intrusive, Marie’s kleptomania 
+                and tendency to meddle create tension within the family. Despite her flaws, her unwavering support for Hank and her emotional resilience 
+                during his darkest moments highlight her loyalty and strength. Marie provides a unique perspective on the fallout from Walter’s actions, 
+                serving as both a source of comic relief and a poignant reminder of the collateral damage caused by Walter’s descent into the criminal world.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    </div>
+    <div class = "ui container">
+    <table class = "ui celled unstackable table">
         <thead>
             <tr>
                 <th rowspan="2">Aspect</th>
@@ -141,7 +236,7 @@
                 <td>Drives Walter’s downfall and ultimate tragedy.</td>
             </tr>
         </tbody>
-    </table>
+    </table></div>
 
     </main>
     <footer>
@@ -154,5 +249,8 @@
  ></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.js">
  </script>
+ <script>
+    $('.menu .item').tab();
+</script>
   </body>
 </html>
