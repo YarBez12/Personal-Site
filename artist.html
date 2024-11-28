@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favourite artist</title>
-    <link rel = "stylesheet" href="css/style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css">
+    <!-- <link rel = "stylesheet" href="css/style.css"> -->
 </head>
 <body>
-    <header>
-        <h1>Yaroslav Bezvesilnyi</h1>
-        <section id = "topic">
-            <h2>Favourite artist</h2>
-            <h3>Artist who connects generations through music and creativity</h3>
-        </section>
+    <header class = "ui container">
+        <div class = "ui stackable grid">
+        <div class = "green sixteen wide center aligned column"><div class="ui massive header">Yaroslav Bezvesilnyi</div></div>
+        <div class = "ui row">
+        <div class = "blue seven wide left aligned column"><div class="ui huge header">Yaroslav Bezvesilnyi</div></div>
+        <div class = "teal nine wide right aligned column"><div class="ui large header">Yaroslav Bezvesilnyi</div></div>
+        </div>
+        </div>
     </header>
-    <nav id = "pages">
-        <a href = "index.html">Home</a>
-        <a href = "films.html">Favourite films</a>
-        <a href = "city.html">Native city</a>
-        <a href = "pictures.html">Favourite pictures</a>
-        <a href = "traditions.html">National traditions</a>
-        <a href = "artist.html">Favourite artist</a>
-        <a href = "series.html">Favourite series</a>
+    <nav class = "ui container">
+        <div class = "ui seven item stackable top attached tabular menu">
+        <a class = "item" href = "index.html">Home</a>
+        <a class = "item" href = "films.html">Favourite films</a>
+        <a class = "item" href = "city.html">Native city</a>
+        <a class = "item" href = "pictures.html">Favourite pictures</a>
+        <a class = "item" href = "traditions.html">National traditions</a>
+        <a class = "active item" href = "artist.html">Favourite artist</a>
+        <a class = "item" href = "series.html">Favourite series</a>
+        </div>
     </nav>
     <main>
-        <h3>Danya Kashin</h3>
-        <img src = "images/dk.jpg" alt = "DK">
-        <table>
+        <div class="ui large center aligned header">Danya Kashin</div>
+        <div class = "ui container">
+        <div class = "ui grid">
+            <div class = "ui five wide column">
+        <img class="ui medium circular image" src = "images/dk.jpg" alt = "DK">
+        </div>
+        <div class = "ui eleven wide column">
+        <table class = "ui very basic table">
             <tbody>
                 <tr>
-                    <td>Careers</td>
-                    <td>singer, blogger, rapper, streamer</td>
+                    <td class="five wide">Careers</td>
+                    <td class="eleven wide">singer, blogger, rapper, streamer</td>
                 </tr>
                 <tr>
                     <td>Date of birtd</td>
@@ -54,12 +65,17 @@
                 </tr>
             </tbody>
         </table>
+        </div></div>
+        <div class="ui segments">
+            <div class="ui red segment">
         <p>Danila Kashin, better known as D.K. Inc, is one of 
             the most recognizable video bloggers. Author of popular 
             channels on YouTube, rap artist, singer and streamer. 
             A significant part of Internet users know who Kashin is, 
             or remembers a couple of lines from his songs.
         </p>
+        </div>
+        <div class="ui blue segment">
         <p>Danila's biography began in Kazan in 1996, on November 6. 
             It's hard to find information about Kashin's parents. 
             In addition, judging by the sources, the data differs from each other. 
@@ -74,6 +90,8 @@
             rapped with friends on the street. In 2011, he became interested 
             in "Youtube".
         </p>
+        </div>
+        <div class="ui green segment">
         <p>
             Since 2016, DK has been a performer of his own tracks. 
             Clips shot together with other bloggers appeared. 
@@ -124,59 +142,63 @@
             In 2024, DK released 2 hits - "Don't Plant Love" and "Night", 
             which sank into the hearts of viewers.
         </p>
-        <h3>Albums</h3>
-        <div class = "ui card">
+        </div></div>
+        <div class="ui large center aligned header">Albums</div>
+        <div class = "ui three column grid">
+        <div class = "column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/non-arival.png">
             </div>
             <div class = "content">
-                <a class = "header">Non Arival</a>
+                <a class = "center aligned header">Non Arival</a>
                 <div class = "meta">
                     <span class = "date">Released in 2019</span>
                 </div>
                 <div class = "extra content">
-                    <i class = "song icon"></i>
+                    <i class = "music icon"></i>
                     8 songs
                 </div>
             </div>
-        </div>
-
-        <div class = "ui card">
+        </div></div>
+        <div class = "column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/synonim.jpg">
             </div>
             <div class = "content">
-                <a class = "header">Synonim</a>
+                <a class = "center aligned header">Synonim</a>
                 <div class = "meta">
                     <span class = "date">Released in 2020</span>
                 </div>
                 <div class = "extra content">
-                    <i class = "song icon"></i>
+                    <i class = "music icon"></i>
                     10 songs
                 </div>
             </div>
-        </div>
-
-        <div class = "ui card">
+        </div></div>
+        <div class = "column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/hypocrite.jpg">
             </div>
             <div class = "content">
-                <a class = "header">Hypocrite</a>
+                <a class = "center aligned header">Hypocrite</a>
                 <div class = "meta">
                     <span class = "date">Released in 2021</span>
                 </div>
                 <div class = "extra content">
-                    <i class = "song icon"></i>
+                    <i class = "music icon"></i>
                     8 songs
                 </div>
             </div>
         </div>
-        <h3>
-            Most famous songs
-        </h3>
-
-        <div class = "ui card">
+        </div></div>
+        <div class="ui large center aligned header">Most famous songs</div>
+        
+            <div class="ui doubling stackable three column centered grid">
+            <div class="column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/night.jpeg">
             </div>
@@ -198,9 +220,9 @@
                     </blockquote>
                 </div>
             </div>
-        </div>
-
-        <div class = "ui card">
+        </div></div>
+        <div class = "column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/i-watch-anime.jpg">
             </div>
@@ -223,9 +245,9 @@
                     </blockquote>
                 </div>
             </div>
-        </div>
-
-        <div class = "ui card">
+        </div></div>
+        <div class = "column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/praxx.jpeg">
             </div>
@@ -248,9 +270,9 @@
                     </blockquote>
                 </div>
             </div>
-        </div>
-        
-        <div class = "ui card">
+        </div></div>
+        <div class = "column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/hypocrite.png">
             </div>
@@ -273,9 +295,9 @@
                     </blockquote>
                 </div>
             </div>
-        </div>
-
-        <div class = "ui card">
+        </div></div>
+        <div class = "column">
+        <div class = "ui fluid card">
             <div class = "image">
                 <img src = "images/2k.png">
             </div>
@@ -300,9 +322,17 @@
                 </div>
             </div>
         </div>
+        </div></div>
     </main>
     <footer>
         <p>&copy; Yaroslav Bezvesilnyi, 2024. All rights reserved.</p>
-    </footer>    
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous">
+    </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.js">
+ </script>    
 </body>
 </html>
