@@ -2,27 +2,38 @@ body {
     margin: 5%;
 }
 
-header h1 {
-    background-color: #006400;
+header h1, header .center.column  {
+    background-color: #006400 ;
     text-align: center;
-    color: white;
 }
-header h2 {
+header h1, header .center.column .header {
+    color: #ffffff ;
+}
+header h2, header .left.column{
     background-color: #D8F5EB;
-    flex: 1;
+}
+header h2, header .left.column .header {
     color: #006400;
     padding-left: 20px;
 }
-header h3 {
+header h2 {
+    flex: 1;
+}
+header h3, header .right.column {
     background-color: #BFFDE9;
-    flex: 1.5;
     border-left: 1px solid #80FAD6;
-    color: #006400;
     text-align: right;
     font-style: italic;
+}
+header h3, header .right.column .header {
+    color: #006400;
     padding-right: 20px;
 }
-header h1, header h2, header h3 {
+header h3 {
+    flex: 1.5;
+}
+
+header h1, header h2, header h3, header .ui.header {
     padding: 10px 5px;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     margin: 0;
@@ -31,6 +42,15 @@ header h1, header h2, header h3 {
     display: flex;
     width: 100%;
     border-block: 3px solid #00FF09;
+}
+.ui.grid .row {
+    border-block: 3px solid #00FF09;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.ui nav {
+    margin: 10px 0;
+    background-color: #B6B000;
 }
 
 #pages {
@@ -47,23 +67,30 @@ header h1, header h2, header h3 {
     width: 10%;
     text-align: center;
 }
+.ui nav .menu .item {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
 
-#pages a:link {
-    color: white;
+#pages a:link, .ui nav .menu .item:link {
+    color: white !important;
     text-decoration: none;
 }
 
-#pages a:visited {
+#pages a:visited, .ui nav .menu .item:visited {
     color: #FFE2E7;
     text-decoration: none;
 }
-#pages a:hover {
-    color: #e74c3c; 
+.ui nav .menu .active.item:visited {
+    color: #328da8;
+}
+#pages a:hover, .ui nav .menu .item:hover {
+    color: #e74c3c !important;
     text-decoration: underline;
 }
 
-#pages a:active {
-    color: #3824F0;
+#pages a:active, .ui nav .menu .item:active {
+    color: #3824F0 !important;
  }
 
 main {
@@ -126,7 +153,13 @@ main h3 {
     text-align: center;
     margin: 10px;
 }
+main .header {
+    padding: 10px !important;
+}
 
+main .image { 
+    padding-left: 10px;
+}
 #films {
     background-image: url(../images/filmbg.jpg);
     background-repeat: no-repeat;
@@ -157,39 +190,39 @@ aside nav ul li {
     border-block: 2px dashed black;
 }
 
-th, td {
+.city th, .city td {
     border: solid black 2px;
 }
-table {
+table.city {
     border-collapse: collapse;
     font-family: 'Open Sans', sans-serif;
     border: dashed black 3px;
     width: 98%;
     margin: 0 auto;
 }
-th {
+.city th {
     font-style: italic;
     font-weight: normal;
     padding: 10px;
     text-decoration: underline;
 }
-td {
+.city td {
     padding: 5px;
 }
-tbody tr:nth-of-type(even) {
+.city tbody tr:nth-of-type(even) {
     background-color: #39FFD8;
 }
-tbody tr:nth-of-type(odd) {
+.city tbody tr:nth-of-type(odd) {
     background-color: #4DE6C8;
 }
-tbody tr:hover {
+.city tbody tr:hover {
     background-color: wheat;
     cursor: pointer;
 }
-thead {
+.city thead {
     background-color: #00B692;
 }
-tr td:first-of-type {
+.city tr td:first-of-type {
     font-style: italic;
 }
 
@@ -232,4 +265,28 @@ main a:hover {
 main a:active {
     background-color: gray;
 }
+
+.ui.segment {
+    background-color: transparent !important;
+}
+
+.ui td {
+    font-size: 17px;
+}
+.ui .card .description {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.ui.card {
+    height: 100%;
+}
+
+.cards.grid {
+    padding: 10px;
+}
+
+.ui.container {
+    width: 100% !important;
+}
+
 
