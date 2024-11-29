@@ -7,9 +7,11 @@
     <link rel="stylesheet" 
        href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css">
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    
   </head>
   <body>
-    <header class = "ui container">
+    <div class = "ui container">
+    <header >
         <div class = "ui stackable grid">
         <div class = "green sixteen wide center aligned column"><div class="ui massive header">Yaroslav Bezvesilnyi</div></div>
         <div class = "ui row">
@@ -18,7 +20,7 @@
         </div>
         </div>
     </header>
-    <nav class = "ui container">
+    <nav>
         <div class = "ui seven item stackable top attached tabular menu">
         <a class = "item" href = "index.html">Home</a>
         <a class = "item" href = "films.html">Favourite films</a>
@@ -31,7 +33,6 @@
     </nav>
     <main>
         <div class="ui large center aligned header">Breaking Bad</div>
-        <div class = "ui container">
         <div class="ui blue piled segment">
       <p>
         The series "Breaking Bad", created by Vince Gilligan, first aired on AMC
@@ -190,8 +191,8 @@
     </div>
     
     
-    </div>
-    <div class = "ui container">
+
+
     <table class = "ui celled unstackable table">
         <thead>
             <tr>
@@ -236,12 +237,161 @@
                 <td>Drives Walter’s downfall and ultimate tragedy.</td>
             </tr>
         </tbody>
-    </table></div>
+    </table>
+    <div class="ui large center aligned header">Your Favourite Series</div>
+    <form action="submit.html" method="post" class="ui form">
+        <div class="two fields">
+          <div class="field">
+            <label for = "name">Series name</label>
+            <input type="text" name = "name" placeholder="e.g. Money Heist" required = "true" title = "Fill in the series name" autofocus = "true">
+          </div>
+          <div class="field">
+            <label for = "season">Favourite season</label>
+            <input type="number" name = "season" placeholder="1" required = "true" min = "1" title = "Invalid season">
+          </div>
+        </div>
+
+          <div class="two fields">
+          <div class="field">
+            <label for = "genre">Genre</label>
+            <select class="ui search dropdown" name = "genre" required = "" title="Please sellect genre">
+              <option value="">Select a genre</option>
+              <option value="drama">Drama</option>
+              <option value="comedy">Comedy</option>
+              <option value="action">Action</option>
+              <option value="adventure">Adventure</option>
+              <option value="horror">Horror</option>
+              <option value="thriller">Thriller</option>
+              <option value="sci-fi">Science Fiction</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="mystery">Mystery</option>
+              <option value="romance">Romance</option>
+              <option value="crime">Crime</option>
+              <option value="documentary">Documentary</option>
+              <option value="biography">Biography</option>
+              <option value="historical">Historical</option>
+              <option value="family">Family</option>
+              <option value="animation">Animation</option>
+              <option value="musical">Musical</option>
+              <option value="western">Western</option>
+              <option value="psychological">Psychological</option>
+              <option value="supernatural">Supernatural</option>
+              <option value="political">Political</option>
+              <option value="legal">Legal</option>
+              <option value="medical">Medical</option>
+              <option value="war">War</option>
+              <option value="sports">Sports</option>
+              <option value="teen">Teen</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for = "release">Season 1 release date</label>
+            <div class="ui calendar">
+              <div class="ui input left icon">
+                <i class="calendar icon"></i>
+                <input type="text" placeholder="Pick up a release date" name="release">
+              </div>
+            </div>
+          </div></div>
+          <div class="field">
+            <label for="categories">Categories for whom the series is suitable</label>
+            <select class="ui search dropdown" name="categories" multiple>
+              <option value="">Select Categories</option>
+              <option value="kids">Kids</option>
+              <option value="teens">Teens</option>
+              <option value="adults">Adults</option>
+              <option value="families">Families</option>
+              <option value="seniors">Seniors</option>
+              <option value="science-enthusiasts">Science Enthusiasts</option>
+              <option value="fantasy-fans">Fantasy Fans</option>
+              <option value="action-lovers">Action Lovers</option>
+              <option value="comedy-enthusiasts">Comedy Enthusiasts</option>
+              <option value="romance-seekers">Romance Seekers</option>
+              <option value="horror-fans">Horror Fans</option>
+              <option value="crime-mystery-fans">Crime and Mystery Fans</option>
+              <option value="light-laugh">For a Light Laugh</option>
+              <option value="deep-thinking">For Deep Thinking</option>
+              <option value="thrill-seekers">For Thrill Seekers</option>
+              <option value="relaxation">For Relaxation</option>
+              <option value="medical-professionals">Medical Professionals</option>
+              <option value="legal-enthusiasts">Legal Enthusiasts</option>
+              <option value="history-buffs">History Buffs</option>
+              <option value="sci-fi-geeks">Sci-Fi Geeks</option>
+              <option value="sports-fans">Sports Fans</option>
+              <option value="music-lovers">Music Lovers</option>
+              <option value="adventure-seekers">For Adventure Seekers</option>
+              <option value="strong-characters">For Those Who Love Strong Characters</option>
+              <option value="romantic-dreamers">For Romantic Dreamers</option>
+              <option value="realists">For Realists</option>
+              <option value="dreamers">For Dreamers</option>
+            </select>
+          </div>
+          <div class="inline fields">
+            <label for="rating">Your rating of the series: </label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="rating" tabindex="0" class="hidden">
+                <label>1</label>
+              </div>
+            </div>
+
+            <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="rating" tabindex="0" class="hidden">
+                  <label>2</label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="ui radio checkbox checked">
+                  <input type="radio" name="rating" tabindex="0" class="hidden" checked = "">
+                  <label>3</label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="rating" tabindex="0" class="hidden">
+                  <label>4</label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="rating" tabindex="0" class="hidden">
+                  <label>5</label>
+                </div>
+              </div>
+            
+          </div>
+          <div class="field">
+            <label>Yours impressions</label>
+            <textarea></textarea>
+          </div>
+          <div class="inline field">
+            <div class="ui checkbox">
+              <input type="checkbox" name = "mailing_check" tabindex="0" class="hidden" id="mailing_check" >
+              <label for = "mailing_check">Receive news by email</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for = "email">Your email: </label>
+            <input placeholder="user@gmail.com" type="email" disabled tabindex="-1" id="email">
+          </div>
+          <div class="ui buttons">
+            <button type="submit" class="ui submit button">Submit</button>
+            <div class="or"></div>
+            <button type="reset" class="ui reset button">Reset</button>
+          </div>
+        </form>
+        
+          
+      
 
     </main>
     <footer>
       <p>&copy; Yaroslav Bezvesilnyi, 2024. All rights reserved.</p>
-    </footer>
+    </footer></div>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -251,6 +401,28 @@
  </script>
  <script>
     $('.menu .item').tab();
+    $('.ui.checkbox')
+  .checkbox()
+;
+
+$('.ui.dropdown').dropdown();
+$('.ui.calendar').calendar({
+  type: 'date'
+});
+
+  const checkbox = document.getElementById('mailing_check');
+  const emailInput = document.getElementById('email');
+
+  checkbox.addEventListener('change', function() {
+    if (checkbox.checked) {
+      emailInput.disabled = false; 
+      emailInput.classList.remove('disabled'); 
+    } else {
+      emailInput.disabled = true; 
+      emailInput.classList.add('disabled');
+    }
+  });
+
 </script>
   </body>
 </html>
