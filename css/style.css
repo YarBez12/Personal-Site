@@ -200,7 +200,7 @@ table.city {
     width: 98%;
     margin: 0 auto;
 }
-.city th {
+th {
     font-style: italic;
     font-weight: normal;
     padding: 10px;
@@ -222,9 +222,11 @@ table.city {
 .city thead {
     background-color: #00B692;
 }
-.city tr td:first-of-type {
+
+tr td:first-of-type:not(.example) {
     font-style: italic;
 }
+
 
 figcaption {
     color: #009572;
@@ -251,6 +253,10 @@ ol ul li:hover {
   
 #content img:hover {
     transform: scale(1.1); 
+}
+.ui.image:hover {
+    transform: scale(1.03); 
+    transition: transform 0.2s ease; 
 }
 
 main a:link {
@@ -279,6 +285,7 @@ main a:active {
 }
 .ui.card {
     height: 100%;
+
 }
 
 .cards.grid {
@@ -289,4 +296,40 @@ main a:active {
     width: 100% !important;
 }
 
+main .menu .item {
+    background-color: #a59fd1 !important;
+    font-size: 16px;
+}
 
+.ui.table {
+    border-collapse: collapse; 
+    width: 98%;
+    margin: 0 auto;
+}
+
+.ui.table.topics td, 
+.ui.table.topics th {
+    border: 3px solid #ccc; 
+}
+
+form {
+    padding: 10px;
+    
+}
+form label {
+    font-size: 16px !important;
+}
+
+.ui.message {
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.ui.primary.button {
+    margin-top: 20px; 
+}
+
+.ui.primary.button:hover {
+background-color: #16ab39 !important;
+}
