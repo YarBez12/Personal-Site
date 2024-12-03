@@ -333,3 +333,11 @@ form label {
 .ui.primary.button:hover {
 background-color: #16ab39 !important;
 }
+
+.ui.dropdown .menu .item {
+    background-color: #b8b4d1 !important; 
+}
+
+.ui.dropdown .menu .item:hover {
+    background-color: #add8e6 !important; 
+}
